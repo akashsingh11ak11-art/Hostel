@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elite Residency | Premium Boys Hostel in Kota</title>
+    <meta name="description" content="Premium boys hostel near Allen and Motion in Kota. Luxury AC rooms, hygienic mess, 24x7 security, and the perfect study environment for IIT-JEE & NEET aspirants.">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Inter"', 'sans-serif'],
+                        serif: ['"Playfair Display"', 'serif'],
+                    },
+                    colors: {
+                        dark: '#0B132B',       /* Deep Navy / Dark Theme */
+                        surface: '#1C2541',    /* Card Surface */
+                        gold: '#EAB308',       /* Premium Gold */
+                        goldHover: '#FACC15',
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        body { background-color: #0B132B; color: #f8fafc; overflow-x: hidden; }
+        
+        /* Glassmorphism for Navbar & Cards */
+        .glass {
+            background: rgba(28, 37, 65, 0.6);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(234, 179, 8, 0.15);
+        }
+
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #FDE68A 0%, #EAB308 50%, #D97706 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* Hover Effects */
+        .premium-card {
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .premium-card:hover {
+            transform: translateY(-8px);
+            border-color: rgba(234, 179, 8, 0.5);
+            box-shadow: 0 15px 30px rgba(234, 179, 8, 0.1);
+        }
+
+        /* Scroll Reveal Animation */
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease-out;
+        }
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .delay-100 { transition-delay: 0.1s; }
+        .delay-200 { transition-delay: 0.2s; }
+
+        /* Floating WhatsApp Pulse */
+        .pulse-btn { animation: pulseGlow 2s infinite; }
+        @keyframes pulseGlow {
+            0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5); }
+            70% { box-shadow: 0 0 0 20px rgba(37, 211, 102, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+        }
+    </style>
+</head>
+<body class="font-sans antialiased selection:bg-gold selection:text-dark">
+
+    <a href="https://wa.me/910000000000?text=Hello,%20I%20want%20to%20book%20a%20hostel%20room." 
+       target="_blank" 
+       class="fixed bottom-6 right-6 w-16 h-16 bg-[#25D366] rounded-full flex items-center justify-center text-4xl text-white z-50 pulse-btn hover:scale-110 transition-transform duration-300">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <nav id="navbar" class="fixed w-full z-40 top-0 transition-all duration-300 py-4 glass border-b-0">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
+            <div class="flex items-center gap-2 cursor-pointer">
+                <i class="fas fa-crown text-gold text-3xl"></i>
+                <span class="font-serif font-bold text-2xl tracking-wide">Elite<span class="text-gold">Residency</span></span>
+            </div>
+            <div class="hidden md:flex space-x-8 items-center text-sm font-medium tracking-wider uppercase">
+                <a href="#about" class="text-gray-300 hover:text-gold transition">About</a>
+                <a href="#facilities" class="text-gray-300 hover:text-gold transition">Facilities</a>
+                <a href="#rooms" class="text-gray-300 hover:text-gold transition">Rooms</a>
+                <a href="#reviews" class="text-gray-300 hover:text-gold transition">Reviews</a>
+            </div>
+            <a href="tel:+910000000000" class="hidden md:flex bg-gold text-dark px-6 py-2 rounded font-bold hover:bg-goldHover transition shadow-[0_0_15px_rgba(234,179,8,0.3)] items-center gap-2 text-sm uppercase tracking-wider">
+                <i class="fas fa-phone-alt"></i> Call Us
+            </a>
+        </div>
+    </nav>
+
+    <section class="relative h-[100dvh] min-h-[600px] flex items-center justify-center overflow-hidden pt-20">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1522771731470-ea43221d450d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" alt="Premium Hostel Room" loading="lazy" class="w-full h-full object-cover opacity-30" />
+            <div class="absolute inset-0 bg-gradient-to-b from-dark/90 via-dark/70 to-dark"></div>
+        </div>
+        
+        <div class="relative z-10 w-full max-w-5xl mx-auto px-6 text-center reveal">
+            <div class="inline-flex items-center gap-2 border border-gold/50 bg-gold/10 text-gold px-4 py-1.5 rounded-full mb-6 text-xs md:text-sm font-semibold tracking-widest uppercase backdrop-blur-sm">
+                <i class="fas fa-map-marker-alt"></i> Prime Location in Kota
+            </div>
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-serif font-bold leading-[1.1] mb-6 drop-shadow-xl">
+                Premium Boys Hostel Near <span class="gold-gradient-text">Allen & Motion</span>
+            </h1>
+            <p class="text-lg md:text-xl text-gray-300 mb-10 font-light tracking-wide max-w-3xl mx-auto">
+                Comfort | Safety | Perfect Study Environment.<br class="hidden md:block"> Designed exclusively for serious IIT-JEE & NEET aspirants.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-5 justify-center">
+                <a href="https://wa.me/910000000000?text=I%20want%20to%20book%20a%20room." target="_blank" class="bg-gold text-dark px-8 py-4 rounded font-bold hover:bg-goldHover transition shadow-[0_0_20px_rgba(234,179,8,0.4)] flex items-center justify-center gap-3 uppercase tracking-wider text-sm">
+                    <i class="fab fa-whatsapp text-lg"></i> Book Now on WhatsApp
+                </a>
+                <a href="#rooms" class="border border-gold text-gold px-8 py-4 rounded font-bold hover:bg-gold/10 transition flex items-center justify-center uppercase tracking-wider text-sm">
+                    View Rooms & Pricing
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div class="relative reveal">
+                    <div class="absolute -inset-4 bg-gold/10 blur-2xl rounded-full z-0"></div>
+                    <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Study Area" loading="lazy" class="relative z-10 w-full h-[400px] object-cover rounded-lg border border-gold/20 shadow-2xl" />
+                </div>
+                <div class="reveal delay-100">
+                    <h2 class="text-sm text-gold font-bold tracking-widest uppercase mb-2">Why Choose Us</h2>
+                    <h3 class="text-3xl md:text-5xl font-serif font-bold mb-6 text-white">Your Child's Second Home in Kota.</h3>
+                    <p class="text-gray-400 leading-relaxed mb-6 font-light">
+                        We understand the pressure of competitive exams. That's why Elite Residency is built to provide a zero-distraction, highly secure, and comfortable living space. From nutritious meals to absolute silence in the corridors, every detail is engineered for student success.
+                    </p>
+                    <ul class="space-y-4 text-gray-300 font-medium">
+                        <li class="flex items-center gap-3"><i class="fas fa-shield-alt text-gold"></i> 100% Safe & Secure Campus</li>
+                        <li class="flex items-center gap-3"><i class="fas fa-broom text-gold"></i> Extremely Clean & Hygienic</li>
+                        <li class="flex items-center gap-3"><i class="fas fa-book-reader text-gold"></i> Dedicated Distraction-Free Study Zones</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="facilities" class="py-24 bg-[#0F172A] border-y border-white/5 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16 reveal">
+                <h2 class="text-4xl font-serif font-bold text-white mb-4">World-Class <span class="gold-gradient-text">Facilities</span></h2>
+                <p class="text-gray-400 font-light">Everything a student needs to focus purely on their studies.</p>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-6 reveal delay-100">
+                <div class="glass premium-card p-6 rounded-lg text-center">
+                    <i class="fas fa-snowflake text-4xl text-gold mb-4"></i>
+                    <h4 class="font-bold text-white mb-2">AC / Non-AC Rooms</h4>
+                    <p class="text-xs text-gray-400 font-light">Fully furnished setups</p>
+                </div>
+                <div class="glass premium-card p-6 rounded-lg text-center">
+                    <i class="fas fa-utensils text-4xl text-gold mb-4"></i>
+                    <h4 class="font-bold text-white mb-2">Healthy Mess</h4>
+                    <p class="text-xs text-gray-400 font-light">4 times nutritious veg meals</p>
+                </div>
+                <div class="glass premium-card p-6 rounded-lg text-center">
+                    <i class="fas fa-wifi text-4xl text-gold mb-4"></i>
+                    <h4 class="font-bold text-white mb-2">High-Speed Wi-Fi</h4>
+                    <p class="text-xs text-gray-400 font-light">Uninterrupted 24x7 internet</p>
+                </div>
+                <div class="glass premium-card p-6 rounded-lg text-center">
+                    <i class="fas fa-video text-4xl text-gold mb-4"></i>
+                    <h4 class="font-bold text-white mb-2">24x7 Security</h4>
+                    <p class="text-xs text-gray-400 font-light">CCTV & Biometric entry</p>
+                </div>
+                <div class="glass premium-card p-6 rounded-lg text-center">
+                    <i class="fas fa-tshirt text-4xl text-gold mb-4"></i>
+                    <h4 class="font-bold text-white mb-2">Laundry Service</h4>
+                    <p class="text-xs text-gray-400 font-light">Washed & ironed clothes</p>
+                </div>
+                <div class="glass premium-card p-6 rounded-lg text-center">
+                    <i class="fas fa-book text-4xl text-gold mb-4"></i>
+                    <h4 class="font-bold text-white mb-2">Study Room</h4>
+                    <p class="text-xs text-gray-400 font-light">Silent reading halls</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="rooms" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16 reveal">
+                <h2 class="text-4xl font-serif font-bold text-white mb-4">Premium <span class="gold-gradient-text">Accommodation</span></h2>
+                <p class="text-gray-400 font-light">Choose a room that fits your comfort and budget.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="glass premium-card rounded-lg overflow-hidden flex flex-col reveal">
+                    <img src="https://images.unsplash.com/photo-1555854877-bab0e564b8d5?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Single Room" loading="lazy" class="w-full h-56 object-cover border-b border-gold/20">
+                    <div class="p-8 flex-grow flex flex-col">
+                        <h3 class="text-2xl font-serif font-bold text-white mb-2">Premium Single Room</h3>
+                        <p class="text-gray-400 text-sm mb-6 border-b border-white/10 pb-6">Ultimate privacy for hyper-focused students.</p>
+                        <ul class="space-y-3 mb-8 text-sm text-gray-300 font-light flex-grow">
+                            <li class="flex items-center gap-3"><i class="fas fa-check text-gold"></i> Attached Washroom</li>
+                            <li class="flex items-center gap-3"><i class="fas fa-check text-gold"></i> King-size Study Table</li>
+                            <li class="flex items-center gap-3"><i class="fas fa-check text-gold"></i> Personal AC & Geyser</li>
+                        </ul>
+                        <div class="mb-6">
+                            <span class="text-3xl font-bold text-gold">₹8,000</span><span class="text-gray-400 text-sm"> / month</span>
+                        </div>
+                        <a href="https://wa.me/910000000000?text=I%20want%20to%20book%20a%20Single%20Room." target="_blank" class="block w-full text-center border border-gold text-gold py-3 uppercase tracking-widest text-xs font-bold hover:bg-gold hover:text-dark transition">
+                            Book Now
+                        </a>
+                    </div>
+                </div>
+
+                <div class="glass premium-card rounded-lg overflow-hidden flex flex-col reveal delay-100 relative border-gold/50 shadow-[0_0_20px_rgba(234,179,8,0.15)]">
+                    <div class="absolute top-0 right-0 bg-gold text-dark text-[10px] font-bold tracking-widest uppercase px-3 py-1 z-10">Most Popular</div>
+                    <img src="https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Double Room" loading="lazy" class="w-full h-56 object-cover border-b border-gold/20">
+                    <div class="p-8 flex-grow flex flex-col">
+                        <h3 class="text-2xl font-serif font-bold text-white mb-2">Double Sharing</h3>
+                        <p class="text-gray-400 text-sm mb-6 border-b border-white/10 pb-6">Balanced comfort and collaborative study.</p>
+                        <ul class="space-y-3 mb-8 text-sm text-gray-300 font-light flex-grow">
+                            <li class="flex items-center gap-3"><i class="fas fa-check text-gold"></i> Separate Beds & Lockers</li>
+                            <li class="flex items-center gap-3"><i class="fas fa-check text-gold"></i> 2 Premium Study Setups</li>
+                            <li class="flex items-center gap-3"><i class="fas fa-check text-gold"></i> AC & Attached Washroom</li>
+                        </ul>
+                        <div class="mb-6">
+                            <span class="text-3xl font-bold text-gold">₹6,500</span><span class="text-gray-400 text-sm"> / month</span>
+                        </div>
+                        <a href="https://wa.me/910000000000?text=I%20want%20to%20book%20a%20Double%20Sharing%20Room." target="_blank" class="block w-full text-center bg-gold text-dark py-3 uppercase tracking-widest text-xs font-bold hover:bg-goldHover transition">
+                            Book Now
+                        </a>
+                    </div>
+                </div>
+
+                <div class="glass premium-card rounded-lg overflow-hidden flex flex-col reveal delay-200">
+                    <img src="https://images.unsplash.com/photo-1598928506311-c55ded91a20c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Triple Room" loading="lazy" class="w-full h-56 object-cover border-b border-gold/20">
+                    <div class="p-8 flex-grow flex flex-col">
+                        <h3 class="text-2xl font-serif font-bold text-white mb-2">Triple Sharing</h3>
+                        <p class="text-gray-400 text-sm mb-6 border-b border-white/10 pb-6">Highly economical without compromising hygiene.</p>
+                        <ul class="space-y-3 mb-8 text-sm text-gray-300 font-light flex-grow">
+                            <li class="flex items-center gap-3"><i class="fas fa-check text-gold"></i> Spacious Room Layout</li>
+                            <li class="flex items-center gap-3"><i class="fas fa-check text-gold"></i> Dedicated Storage & Study</li>
+                            <li class="flex items-center gap-3"><i class="fas fa-check text-gold"></i> Cooler & Ventilated</li>
+                        </ul>
+                        <div class="mb-6">
+                            <span class="text-3xl font-bold text-gold">₹5,000</span><span class="text-gray-400 text-sm"> / month</span>
+                        </div>
+                        <a href="https://wa.me/910000000000?text=I%20want%20to%20book%20a%20Triple%20Sharing%20Room." target="_blank" class="block w-full text-center border border-gold text-gold py-3 uppercase tracking-widest text-xs font-bold hover:bg-gold hover:text-dark transition">
+                            Book Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="reviews" class="py-24 bg-[#0F172A] border-y border-white/5 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16 reveal">
+                <h2 class="text-4xl font-serif font-bold text-white mb-4">Trusted by <span class="gold-gradient-text">Parents & Students</span></h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 reveal delay-100">
+                <div class="glass p-8 rounded-lg relative">
+                    <i class="fas fa-quote-left text-4xl text-gold/20 absolute top-6 right-6"></i>
+                    <div class="flex text-gold mb-4 text-sm">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-300 font-light text-sm leading-relaxed mb-6 italic">
+                        "The mess food is actually good, which is rare in Kota. The study room is completely silent, helping me focus on my JEE prep without any disturbance."
+                    </p>
+                    <div class="flex items-center gap-3 border-t border-white/10 pt-4">
+                        <div class="w-10 h-10 bg-dark text-gold rounded-full flex items-center justify-center font-bold border border-gold/30">A</div>
+                        <div>
+                            <h4 class="font-bold text-white text-sm">Aryan Sharma</h4>
+                            <p class="text-[10px] text-gray-400 uppercase tracking-wider">Allen Student</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass p-8 rounded-lg relative">
+                    <i class="fas fa-quote-left text-4xl text-gold/20 absolute top-6 right-6"></i>
+                    <div class="flex text-gold mb-4 text-sm">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-300 font-light text-sm leading-relaxed mb-6 italic">
+                        "As a parent from Bihar, safety was my biggest concern. The biometric system and 24/7 warden availability here gave me complete peace of mind."
+                    </p>
+                    <div class="flex items-center gap-3 border-t border-white/10 pt-4">
+                        <div class="w-10 h-10 bg-dark text-gold rounded-full flex items-center justify-center font-bold border border-gold/30">R</div>
+                        <div>
+                            <h4 class="font-bold text-white text-sm">Rajesh Singh</h4>
+                            <p class="text-[10px] text-gray-400 uppercase tracking-wider">Parent</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass p-8 rounded-lg relative">
+                    <i class="fas fa-quote-left text-4xl text-gold/20 absolute top-6 right-6"></i>
+                    <div class="flex text-gold mb-4 text-sm">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p class="text-gray-300 font-light text-sm leading-relaxed mb-6 italic">
+                        "Walking distance to Motion coaching. The AC rooms are spacious and housekeeping cleans the room daily. Highly recommended for sincere aspirants."
+                    </p>
+                    <div class="flex items-center gap-3 border-t border-white/10 pt-4">
+                        <div class="w-10 h-10 bg-dark text-gold rounded-full flex items-center justify-center font-bold border border-gold/30">K</div>
+                        <div>
+                            <h4 class="font-bold text-white text-sm">Kunal Verma</h4>
+                            <p class="text-[10px] text-gray-400 uppercase tracking-wider">NEET Aspirant</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                
+                <div class="glass p-8 md:p-12 rounded-lg reveal">
+                    <h2 class="text-3xl font-serif font-bold text-white mb-2">Book Your Room</h2>
+                    <p class="text-gray-400 text-sm font-light mb-8">Fill the details and our warden will call you shortly.</p>
+                    
+                    <form class="space-y-5">
+                        <div>
+                            <input type="text" placeholder="Student/Parent Name" class="w-full bg-dark/50 border border-white/10 text-white px-4 py-3 rounded focus:outline-none focus:border-gold transition font-light text-sm">
+                        </div>
+                        <div>
+                            <input type="tel" placeholder="Mobile Number (+91)" class="w-full bg-dark/50 border border-white/10 text-white px-4 py-3 rounded focus:outline-none focus:border-gold transition font-light text-sm">
+                        </div>
+                        <div>
+                            <select class="w-full bg-dark/50 border border-white/10 text-white/70 px-4 py-3 rounded focus:outline-none focus:border-gold transition font-light text-sm appearance-none">
+                                <option class="bg-dark">Select Room Type</option>
+                                <option class="bg-dark">Premium Single (₹8,000)</option>
+                                <option class="bg-dark">Double Sharing (₹6,500)</option>
+                                <option class="bg-dark">Triple Sharing (₹5,000)</option>
+                            </select>
+                        </div>
+                        <button type="button" class="w-full bg-gold text-dark font-bold uppercase tracking-widest text-sm py-4 rounded hover:bg-goldHover transition mt-4">
+                            Submit Inquiry
+                        </button>
+                    </form>
+                </div>
+
+                <div class="reveal delay-100 flex flex-col h-full">
+                    <div class="glass p-8 rounded-lg mb-6 flex-grow">
+                        <h3 class="text-xl font-bold text-white mb-6 font-serif">Quick Contact</h3>
+                        <div class="space-y-4 text-gray-300 font-light text-sm">
+                            <p class="flex items-center gap-4"><i class="fas fa-phone-alt text-gold text-lg w-5"></i> +91 98765 43210</p>
+                            <p class="flex items-center gap-4"><i class="fab fa-whatsapp text-gold text-xl w-5"></i> +91 98765 43210</p>
+                            <p class="flex items-start gap-4"><i class="fas fa-map-marker-alt text-gold text-lg w-5 mt-1"></i> Landmark City, Kunhari, Kota,<br>Rajasthan 324008</p>
+                        </div>
+                        
+                        <div class="mt-8 pt-6 border-t border-white/10">
+                            <h4 class="text-white font-bold mb-3 text-sm">Nearby Coaching Centers:</h4>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-dark text-gray-300 text-xs px-3 py-1 rounded border border-white/10">Allen Sangyan (2 mins walk)</span>
+                                <span class="bg-dark text-gray-300 text-xs px-3 py-1 rounded border border-white/10">Motion Daksh (5 mins walk)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="h-48 w-full rounded-lg overflow-hidden border border-gold/20 shadow-lg">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1m2!1s0x396f9b30c41bb44d%3A0x5f5c103200045588!2sLandmark%20City%2C%20Kunhari%2C%20Kota%2C%20Rajasthan!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" 
+                                width="100%" height="100%" style="border:0; filter: grayscale(100%) invert(92%) contrast(83%);" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-[#050A17] border-t border-gold/20 pt-12 pb-6 relative z-20">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="text-center md:text-left">
+                <div class="font-serif font-bold text-xl tracking-wide text-white mb-2">
+                    Elite<span class="text-gold">Residency</span>
+                </div>
+                <p class="text-gray-500 text-xs tracking-wider uppercase font-light">The Premium Student Accommodation</p>
+            </div>
+            
+            <div class="flex items-center gap-4 text-gray-400">
+                <a href="#" class="w-8 h-8 rounded-full border border-gray-600 flex items-center justify-center hover:text-gold hover:border-gold transition"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="w-8 h-8 rounded-full border border-gray-600 flex items-center justify-center hover:text-gold hover:border-gold transition"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        
+        <div class="max-w-7xl mx-auto px-6 mt-8 pt-6 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-[10px] text-gray-500 tracking-[0.2em] uppercase font-light">
+            <p>&copy; 2026 Elite Residency Kota. All Rights Reserved.</p>
+            <p>Engineered by <span class="text-gold font-semibold">Apex Web Studio</span></p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Cinematic Reveal Animation
+            const reveals = document.querySelectorAll('.reveal');
+            
+            const revealOnScroll = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                    } else {
+                        // Keep animation looping on scroll
+                        entry.target.classList.remove('active');
+                    }
+                });
+            }, {
+                threshold: 0.1,
+                rootMargin: "0px 0px -50px 0px"
+            });
+
+            reveals.forEach(reveal => {
+                revealOnScroll.observe(reveal);
+            });
+        });
+    </script>
+</body>
+</html>
